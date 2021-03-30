@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="prism-live.css">
 	<link rel="stylesheet" href="src/prism-line-numbers.css">
 	<link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
@@ -60,20 +59,32 @@ return(0);
 				</textarea>
 				<p class="line4">Output here:</p>	
 					<span id="output"></span>
-					<p class="line4">>
+					<p class="line4">$>
 						<span id="errorCode" class="error"></span>
 						<span id="output"></span>
 						<span class="cursor4">_</span>
 					</p>
 					
-					<p class="line4">Input here:</p>	
+					<p class="line4">Input here:</p>
 					<textarea class="prism-live language-с" style="--height: 5em" name="input" rows=5 cols=100 id="input"></textarea>
 					<input type="submit" value="Run" id="submit">
 					<input type="reset" value="Submit">
-                    <input type="reset" value="Next"><br/>
-				</form>
+					
+				</form>	
+                <!-- <form class="show_next_task" action="" method="POST">
+					<input type="submit" value="Next" id="link">
+				</form> -->
+				<div class="counter"><span>Exam subject:</span> <span id="counter">0</span></div>
+				<!-- <a href="#" title="Click me" id="link">Click me</a> -->
+			<!-- <div class="otvet2"></div> -->
+			<form class="show_next" action="" method="POST">
+				<input type="submit" value="Next" id="link">
+			</form>
+			<pre><code><div class="counter"><span id="counter"><?= $data ?></span></div></code></pre>
+			<div class="otvet3"></div>
 		</div>
 	</div>
+
 </main>
 
 
@@ -97,6 +108,7 @@ return(0);
 <script src="src/prism-live-css.js"></script>
 <script src="src/prism-live-javascript.js"></script>
 <script src="index.js"></script>
-
+<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+<script src="main.js"></script>
 </body>
 </html>

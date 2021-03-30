@@ -12,3 +12,7 @@ $ sudo apt install php-cli
 $ sudo apt install haserl
 Install gcc
 $ sudo apt install build-essential 
+
+Add api for printing tasks.
+Read from Mysql - disable, read from file - activ  
+Ajax in main.js 
